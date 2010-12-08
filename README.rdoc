@@ -1,6 +1,7 @@
 = nested_liquid
 
-Description goes here.
+Allows you to bypass liquids sanity checks on method calls for particular namespaces as well and render the templates recursively.
+
 
 == Contributing to nested_liquid
  
@@ -14,6 +15,6 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2010 Mark Turner. See LICENSE.txt for
+Copyright (c) 2010 Mark Turner & G5 Search Marketing Inc. See LICENSE.txt for
 further details.
 

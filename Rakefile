@@ -15,14 +15,12 @@ Jeweler::Tasks.new do |gem|
   gem.name = "nested_liquid"
   gem.homepage = "http://github.com/amerine/nested_liquid"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = "Bypass liquids saniziation and render nested liquid templates"
+  gem.description = "Bypass liquids saniziation and render nested liquid templates inside certian namespaces"
   gem.email = "mark@amerine.net"
   gem.authors = ["Mark Turner"]
-  # Include your dependencies below. Runtime dependencies are required when using your gem,
-  # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
-  #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
-  #  gem.add_development_dependency 'rspec', '> 1.2.3'
+  gem.add_runtime_dependency 'liquid', '> 2.0.0'
+  gem.add_runtime_dependency 'activesupport', '> 2.3.0'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
