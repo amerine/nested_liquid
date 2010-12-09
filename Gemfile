@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem "liquid", ">= 2.0.0"
+gem "liquid", ">=2.0.0"
 gem "activesupport", ">= 2.3.0"
 
 group :development do

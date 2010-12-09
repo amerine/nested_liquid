@@ -1,9 +1,25 @@
 = nested_liquid
 
-Allows you to bypass liquids sanity checks on method calls for particular namespaces as well and render the templates recursively.
+Allows you to bypass liquids sanity checks on method calls for particular namespaces as well and render the liquid templates recursively.
+
+== Installation
+
+  gem install nested_liquid
+
+== Usage
+
+You have to set the allowed namespaces. In the example below I set the allowed namespace to 'address'. (Note: If you're on a rails app, set this in an initializer)
 
 
-== Contributing to nested_liquid
+  Liquid.allowd_namespaces = "address"
+
+Now your liquid templates can have code like the following, without error
+
+  {{person.address.combined}}
+
+And as a bonus the liquid templates can return additional liquid templates and they will be parsed recursively until the liquid context limit (currently 100) is hit. 
+
+== contributing to nested_liquid
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
