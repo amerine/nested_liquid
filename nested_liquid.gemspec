@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mark Turner"]
-  s.date = %q{2010-12-09}
+  s.date = %q{2010-12-14}
   s.description = %q{Bypass liquids saniziation and render nested liquid templates inside certian namespaces}
   s.email = %q{mark@amerine.net}
   s.extra_rdoc_files = [
@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/nested_liquid.rb",
+    "nested_liquid.gemspec",
     "spec/nested_liquid_spec.rb",
     "spec/spec_helper.rb"
   ]
@@ -50,8 +51,6 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.5.1"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
-      s.add_runtime_dependency(%q<liquid>, ["> 2.0.0"])
-      s.add_runtime_dependency(%q<activesupport>, ["> 2.3.0"])
     else
       s.add_dependency(%q<liquid>, [">= 2.0.0"])
       s.add_dependency(%q<activesupport>, [">= 2.3.0"])
@@ -60,8 +59,6 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.5.1"])
       s.add_dependency(%q<rcov>, [">= 0"])
-      s.add_dependency(%q<liquid>, ["> 2.0.0"])
-      s.add_dependency(%q<activesupport>, ["> 2.3.0"])
     end
   else
     s.add_dependency(%q<liquid>, [">= 2.0.0"])
@@ -71,8 +68,6 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<bundler>, ["~> 1.0.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.5.1"])
     s.add_dependency(%q<rcov>, [">= 0"])
-    s.add_dependency(%q<liquid>, ["> 2.0.0"])
-    s.add_dependency(%q<activesupport>, ["> 2.3.0"])
   end
 end
 

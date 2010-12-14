@@ -19,8 +19,8 @@ Jeweler::Tasks.new do |gem|
   gem.description = "Bypass liquids saniziation and render nested liquid templates inside certian namespaces"
   gem.email = "mark@amerine.net"
   gem.authors = ["Mark Turner"]
-  gem.add_runtime_dependency 'liquid', '> 2.0.0'
-  gem.add_runtime_dependency 'activesupport', '> 2.3.0'
+  #gem.add_runtime_dependency 'liquid', '> 2.0.0'
+  #gem.add_runtime_dependency 'activesupport', '> 2.3.0'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
